@@ -3,10 +3,11 @@ import { Hero } from '../hero';
 import { FormsModule } from '@angular/forms'
 import { CommonModule } from '@angular/common';
 import {HEROES} from '../mock-heroes';
+import {HeroDetailComponent} from '../hero-detail/hero-detail.component';
 @Component({
   selector: 'app-heroes',
   standalone: true,
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule,HeroDetailComponent, CommonModule],
   templateUrl: './heroes.component.html',
   styleUrl: './heroes.component.css',
   template: `
